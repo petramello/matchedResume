@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Home from "./containers/Home/Home";
 import Match from "./containers/Match/Match";
-import Profile from "./containers/Profile/Profile";
+import Resume from "./containers/Resume/Resume";
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <Route path="/home"><Home /></Route>
           <Route path="/match"><Match /></Route>
-          <Route path="/profile"><Profile /></Route>
+          <Route path="/resume"><Resume /></Route>
         </Switch>
       </BrowserRouter>
     </>
