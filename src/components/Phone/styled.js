@@ -20,6 +20,51 @@ export const MatchDiv = styled.div`
   background-color: #3C393A;
 `
 
+export const PictureDiv = styled.div`
+  margin-top: 60px;
+  margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 380px;
+`
+export const MatchPhoto = styled.img`
+  width: 405px;
+  height: fit-content;
+  margin: 20px 0 0 0;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+`
+
+export const ChoiceContainer = styled.div`
+  width: 380px;
+  height: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+`
+
+export const Choice = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 7.5rem;
+  text-align: center;
+  border-radius: 50%;
+  border: solid #7c7c7c 8px;
+  background-color: white;
+  color: ${props => (props.color || "#4BCC95")};
+  padding: 0;
+  font-size: 3rem;
+`
+
+export const Options = styled(Choice)`
+  width: 30rem;
+  height: 4rem;
+  margin: 0;
+`
+
 export const MatchTitle = styled(MidleText)`
   font-family: Lobster, sans-serif;
   font-size: 4rem;
