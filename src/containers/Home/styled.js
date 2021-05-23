@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {NavLink} from "react-router-dom";
 
 export const HomeContainer = styled.div`
   width: 100%;
@@ -18,7 +19,9 @@ export const OpportunityContainer = styled.div`
   width: 50%;
   height: 100%;
   margin: 0;
-  background-color: #0839be;
+  //background-color: #0839be;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,63,193,1) 0%, rgba(8,57,190,1) 45%, rgba(0,212,255,1) 100%);
   clip-path: polygon(90% 0, 100% 100%, 0 100%, 0 0);
 `
 
@@ -41,20 +44,31 @@ export const SearchContainer= styled.div`
 `
 
 export const MidleText= styled.p`
+  font-family: Gudea, sans-serif;
   text-align: center;
-
   font-size: 2rem;
   margin-bottom: 50px;
   letter-spacing: 0.2rem;
 `
 
-export const SquareButton= styled.button`
+export const SquareLink= styled(NavLink)`
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 300px;
   padding: 1.5rem;
   color: white;
+  font-size: 1.2rem;
   font-weight: bold;
-  background-color: #0839be;
+  background-color: #0a47ed;
+  opacity: 70%;
   letter-spacing: 0.2rem;
+  text-decoration: none;
+  font-family: Gudea, sans-serif;
+  font-style: normal;
+
+
+  &:hover {
+    font-size: 1.3rem;
+    background-color: #541AA4;
+  }
 `

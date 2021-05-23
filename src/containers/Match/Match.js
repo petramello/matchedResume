@@ -1,20 +1,29 @@
 import React from 'react';
 
 import Avatar from "../../components/Avatar/Avatar";
+import avatarCompany from "../../assets/possibleAvatarII.jpeg";
+import avatarMatched from "../../assets/matchProfile.jpg";
 
-import {MatchContainer, MatchTitle} from "./styled";
-import {SquareButton} from "../Home/styled";
+import {MatchContainer,
+  MatchTitle,
+  AvatarContainer,
+  MatchSubTitle,
+  MatchDiv,
+  CVLink} from "./styled";
 
 const Match = () => {
 
   return (
     <MatchContainer>
-      <MatchTitle>It's match!</MatchTitle>
-      <div>
-        <Avatar />
-        <Avatar />
-      </div>
-      <SquareButton>Resume</SquareButton>
+      <MatchDiv>
+        <MatchTitle>It's a match!</MatchTitle>
+        <MatchSubTitle>You and Petra Mello liked each other.</MatchSubTitle>
+        <AvatarContainer>
+          <Avatar photo={avatarCompany} />
+          <Avatar photo={avatarMatched} border="double #e661b2 6px" />
+        </AvatarContainer>
+        <CVLink to="/profile">Resume</CVLink>
+      </MatchDiv>
     </MatchContainer>
   )
 }

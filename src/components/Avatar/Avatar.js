@@ -3,11 +3,11 @@ import React from "react";
 import {AvatarContainer, AvatarImg} from "./styled";
 
 
-const Avatar = () => {
+const Avatar = (props) => {
 
   return (
     <AvatarContainer>
-      <AvatarImg />
+      <AvatarImg src={props.photo} border={props.border}/>
     </AvatarContainer>
   )
 }

@@ -5,7 +5,7 @@ import {HomeContainer,
   OpportunityImg,
   SearchContainer,
   MidleText,
-  SquareButton} from "./styled";
+  SquareLink} from "./styled";
 
 import opportunity from '../../assets/possibleOportunity.png'
 
@@ -18,7 +18,7 @@ const Home = () => {
       </OpportunityContainer>
       <SearchContainer>
         <MidleText>Encontre Seu Match Profissional </MidleText>
-        <SquareButton>Buscar</SquareButton>
+        <SquareLink to="/match">Buscar</SquareLink>
       </SearchContainer>
     </HomeContainer>
   )
