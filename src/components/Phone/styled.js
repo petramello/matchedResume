@@ -82,7 +82,7 @@ export const Choice = styled.div`
   align-items: center;
   justify-content: center;
   width: 50rem;
-  height: 7.5rem;
+  height: 7rem;
   text-align: center;
   border-radius: 50%;
   border: solid #7c7c7c 8px;

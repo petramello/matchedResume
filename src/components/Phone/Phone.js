@@ -54,8 +54,12 @@ const Phone = (props) => {
           :
             (<ChoiceContainer>
                 <Options></Options>
-                <Choice color="#F4686F"><ImCross /></Choice>
-                <Choice onClick={() => setIsMatched(true)}><FaHeart /></Choice>
+                <Choice color="#F4686F">
+                  <ImCross />
+                </Choice>
+                <Choice onClick={() => setIsMatched(true)}>
+                  <FaHeart />
+                </Choice>
                 <Options></Options>
             </ChoiceContainer>)
           }
