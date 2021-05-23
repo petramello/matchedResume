@@ -1,21 +1,21 @@
 import React from 'react'
 
-import { FaWhatsapp } from 'react-icons/fa'
-import { FiMail } from 'react-icons/fi'
+import { GrLinkedin } from 'react-icons/gr'
+import { FaGithub } from 'react-icons/fa'
 import {IconLink} from "./styled";
 
 
 const IconSocialMedia = ({iconColor, iconHoverColor, iconWidth, iconMargin,icon, href, alt, typeIcon, children}) => {
 
-     if (typeIcon === "email") {
-         icon = <FiMail/>;
-         href = "mailto:petramello@gmail.com";
-         alt = "ícone para enviar e-mail para o endereço: petramello@gmail.com";
+     if (typeIcon === "github") {
+         icon = <FaGithub/>;
+         href = "https://github.com/petramello";
+         alt = "Link para o github de Petra Mello";
      }
-        else if (typeIcon === "whatsapp") {
-            icon= <FaWhatsapp />;
-            href = "https://wa.me/5521999169179";
-            alt = "ícone de whatsapp para enviar mensagem para a desenvolvedora front-end: +5521999169179";
+        else if (typeIcon === "linkedin") {
+            icon= <GrLinkedin />;
+            href = "https://www.linkedin.com/in/petramello/";
+            alt = "Link para o linkedin de Petra Mello";
         }
 
     const defaultProps = {

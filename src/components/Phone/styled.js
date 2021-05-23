@@ -29,7 +29,7 @@ export const TitleDiv = styled.div`
 
 export const MatchTitle = styled.p`
   font-family: Lobster, sans-serif;
-  font-size: 4rem;
+  font-size: ${props => (props.sizeTitle || "4rem")};
   margin-bottom: 0;
   letter-spacing: 0;
 `

@@ -4,7 +4,6 @@ import {NavLink} from "react-router-dom";
 export const HomeContainer = styled.div`
   width: 100%;
   height: 100%;
-  margin: 10px;
   color: white;
   display: flex;
   text-align: center;
