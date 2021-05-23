@@ -2,17 +2,15 @@ import styled from 'styled-components';
 import {MidleText} from "../../containers/Home/styled";
 import {NavLink} from "react-router-dom";
 
-
 export const MatchDiv = styled.div`
   font-family: Lobster, sans-serif;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  margin: 10px auto ;
-  padding: 0;
+  text-align: center;
+  margin-top: 50px;
   color: #e661b2;
   width: 400px;
-  height: 750px;
+  height: 700px;
   border-radius: 5%;
   opacity: 95%;
   display: inline-table;
@@ -20,28 +18,63 @@ export const MatchDiv = styled.div`
   background-color: #3C393A;
 `
 
-export const PictureDiv = styled.div`
-  margin-top: 60px;
+export const TitleDiv = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  height: ${props => (props.heightTitleDiv || "10rem")};
+`
+
+export const MatchTitle = styled.p`
+  font-family: Lobster, sans-serif;
+  font-size: 4rem;
   margin-bottom: 0;
+  letter-spacing: 0;
+`
+
+export const MatchSubTitle = styled(MatchTitle)`
+  font-family: Gueda, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+`
+
+export const TinderTitle = styled(MatchTitle)`
+  font-family: Gueda, sans-serif;
+  font-size: 1.3rem;
+`
+
+export const AvatarContainer = styled.div`
   display: inline-flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 350px;
-  height: 380px;
+  height: 300px;
+`
+export const PhotoDiv = styled.div`
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 350px;
+  top: -20px;
 `
 export const MatchPhoto = styled.img`
-  width: 405px;
-  height: fit-content;
-  margin: 20px 0 0 0;
+  height: 450px;
+  width: 400px;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
 `
 
 export const ChoiceContainer = styled.div`
+  position: relative;
   width: 380px;
-  height: 90%;
   display: inline-flex;
   justify-content: space-between;
+  margin-top: 20px;
 `
 
 export const Choice = styled.div`
@@ -65,26 +98,7 @@ export const Options = styled(Choice)`
   margin: 0;
 `
 
-export const MatchTitle = styled(MidleText)`
-  font-family: Lobster, sans-serif;
-  font-size: 4rem;
-  margin-bottom: 0;
-  letter-spacing: 0;
-`
 
-export const MatchSubTitle = styled(MidleText)`
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  letter-spacing: 0.1rem;
-`
-
-export const AvatarContainer = styled.div`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 350px;
-  height: 300px;
-`
 
 export const CVLink = styled(NavLink)`
   display: inline-flex;

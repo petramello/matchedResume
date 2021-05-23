@@ -9,54 +9,56 @@ import avatarMatched from "../../assets/matchProfile.jpg";
 import {
   MatchTitle,
   AvatarContainer,
+  TitleDiv,
   MatchSubTitle,
+  TinderTitle,
   MatchDiv,
-  PictureDiv,
+  PhotoDiv,
   MatchPhoto,
   CVLink, ChoiceContainer, Choice, Options
 } from "./styled";
 
-const Phone = () => {
+const Phone = (props) => {
 
-  const [isMatched, setIsMatched] = useState(false)
+  const [isMatched, setIsMatched] = useState(false);
 
   return (
       <MatchDiv>
-        { isMatched ? null :
-          (<>
-            <MatchSubTitle>tinder job</MatchSubTitle>
-            <PictureDiv>
-              <MatchPhoto src={avatarMatched} />
-            </PictureDiv>
-          </>)
-        }
 
         { isMatched ?
-          (<>
+          (<TitleDiv heightTitleDiv="10rem">
             <MatchTitle>It's a match!</MatchTitle>
             <MatchSubTitle>You and Petra Mello liked each other.</MatchSubTitle>
-          </>)
-        : null}
+          </TitleDiv>)
+        :
+          (<TitleDiv>
+            <TinderTitle>tinder job</TinderTitle>
+          </TitleDiv>)
+        }
 
-            <AvatarContainer>
-              { isMatched ?
-                (<>
-                  <Avatar photo={avatarCompany} />
-                  <Avatar photo={avatarMatched} border="double #e661b2 6px" />
-                </>)
+          <AvatarContainer>
+            { isMatched ?
+              (<>
+                <Avatar photo={avatarCompany} />
+                <Avatar photo={avatarMatched} border="double #e661b2 6px" />
+              </>)
               :
-                (<ChoiceContainer>
-                  <Options></Options>
-                  <Choice color="#F4686F"><ImCross /></Choice>
-                  <Choice onClick={() => setIsMatched(true)}><FaHeart /></Choice>
-                  <Options></Options>
-                </ChoiceContainer>)}
-            </AvatarContainer>
+              <PhotoDiv>
+                <MatchPhoto src={avatarMatched} />
+              </PhotoDiv>
+            }
+          </AvatarContainer>
 
-          { isMatched ?
-            (<CVLink to="/resume">Resume</CVLink>)
-          : null}
-
+        { isMatched ?
+            <CVLink to="/resume">Resume</CVLink>
+          :
+            (<ChoiceContainer>
+                <Options></Options>
+                <Choice color="#F4686F"><ImCross /></Choice>
+                <Choice onClick={() => setIsMatched(true)}><FaHeart /></Choice>
+                <Options></Options>
+            </ChoiceContainer>)
+          }
 
       </MatchDiv>
   )
