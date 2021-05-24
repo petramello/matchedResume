@@ -15,11 +15,12 @@ export const ImgCard = styled.img`
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  transition: opacity .8ms ease-in;
 
   &:hover {
     border: #541AA4 solid 10px;
-    border-radius: 50%;
     cursor: pointer;
+    opacity: 0.95;
   }
 
 `
