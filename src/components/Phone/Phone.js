@@ -1,19 +1,17 @@
 import React, {useState} from 'react';
 
 import ItsLooking from "./ItsLooking/ItsLooking";
-import Itsmatched from "./ItsMatched/Itsmatched";
+import ItsMatched from "./ItsMatched/ItsMatched";
 
 import { MatchDiv } from "./styled";
-import GoBack from "../GoBack/GoBack";
-import {MatchContainer} from "../../containers/Match/styled";
 
 
 const Phone = (props) => {
 
-  const [isMatched, setIsMatched] = useState(false)
+  const [isMatched, setIsMatched] = useState(props.isMatched)
 
   const onHandleClick = () => {
-    if (isMatched === false) {
+    if (props.isMatched === false) {
       setIsMatched(true)
     }
   }
@@ -23,19 +21,11 @@ const Phone = (props) => {
   <>
     <MatchDiv>
       { isMatched ?
-        <Itsmatched />
+        <ItsMatched />
         :
-        <ItsLooking handleClick={() => onHandleClick(isMatched)} />
+        <ItsLooking handleClick={() => onHandleClick(props.isMatched)} />
       }
     </MatchDiv>
-
-    {/*<MatchContainer>*/}
-    {/*  { isMatched ?*/}
-    {/*    <GoBack linkTo="/match" />*/}
-    {/*    :*/}
-    {/*    <GoBack linkTo="/" />*/}
-    {/*  }*/}
-    {/*</MatchContainer>*/}
   </>
   )
 }

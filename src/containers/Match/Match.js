@@ -10,8 +10,12 @@ const Match = () => {
 
   return (
     <MainContainer>
-      <Phone />
+      <Phone isMatched={false} />
+      <MatchContainer>
+        <GoBack linkTo="/" />
+      </MatchContainer>
     </MainContainer>
+
   )
 }
 

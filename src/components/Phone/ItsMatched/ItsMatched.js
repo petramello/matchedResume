@@ -11,7 +11,7 @@ import {CVLink,
 import { AvatarContainer } from "../../Avatar/styled";
 
 
-const Itsmatched = () => {
+const ItsMatched = () => {
 
   return (
     <>
@@ -31,4 +31,4 @@ const Itsmatched = () => {
   )
 }
 
-export default Itsmatched;
+export default ItsMatched;

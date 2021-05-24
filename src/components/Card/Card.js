@@ -1,14 +1,12 @@
 import React from 'react'
-import {CardContent, CardContainer, ContentLink, ImgCard} from "./styled";
+import {CardContainer, CardTitle, ImgCard} from "./styled";
 
 const Card = (props) => {
 
   return (
-    <CardContainer>
-      <CardContent cardContentBack={props.cardContentBack}>
+    <CardContainer cardContentBack={props.cardContentBack} href={props.linkhref} target="_blank" rel="noopener noreferrer">
         <ImgCard src={props.imgCard} alt={props.altText} />
-        <ContentLink  href={props.linkhref} >{props.cardTitle}</ContentLink>
-      </CardContent>
+        <CardTitle>{props.cardTitle}</CardTitle>
     </CardContainer>
   )
 }

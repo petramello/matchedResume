@@ -21,8 +21,6 @@ import {
   Options,
   Choice,
   DenySpan} from "./styled";
-import {MatchContainer} from "../../../containers/Match/styled";
-import GoBack from "../../GoBack/GoBack";
 
 
 const ItsLooking = (props) => {
