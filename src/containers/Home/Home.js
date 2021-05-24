@@ -18,7 +18,7 @@ const Home = () => {
       </OpportunityContainer>
       <SearchContainer>
         <MidleText>Encontre Seu Match Profissional </MidleText>
-        <SquareLink to="/match">Buscar</SquareLink>
+        <SquareLink to="/match">Encontrar</SquareLink>
       </SearchContainer>
     </HomeContainer>
   )

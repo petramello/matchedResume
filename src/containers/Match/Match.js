@@ -9,8 +9,8 @@ import {MatchContainer} from "./styled";
 const Match = () => {
   return (
       <MatchContainer>
-        <Phone />
-        <GoBack link="/home"/>
+        <Phone isMatched={false} />
+        <GoBack link="/"/>
       </MatchContainer>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PDFViewer, Document, Page } from 'react-pdf';
 
 import Phone from "../../components/Phone/Phone";
 import Card from "../../components/Card/Card";
@@ -7,15 +8,16 @@ import droneDaMontanha from "../../assets/droneDaMontanha.png";
 import counterApp from "../../assets/counterApp.png";
 import infoCovid from "../../assets/infoCovid.png";
 import churrascaria from "../../assets/churrascaria.png";
+import cvPDF from '../../assets/cv_PetraMello.pdf';
+
+import IconSocialMedia from "../../components/NavigationItens/IconSocialMidia";
 
 import { ResumeContainer,
   PhoneContainer,
   ResumeDiv,
   PortfolioDiv,
   IconDiv } from "./styled";
-
-import { MatchTitle } from "../../components/Phone/styled";
-import IconSocialMedia from "../../components/NavigationItens/IconSocialMidia";
+import { MatchTitle } from "../../components/Phone/ItsMatched/styled";
 
 const Resume = () => {
 
@@ -23,7 +25,7 @@ const Resume = () => {
     <>
       <ResumeContainer>
         <PhoneContainer>
-          <Phone />
+          <Phone isMatched={true} />
         </PhoneContainer>
         <ResumeDiv>
           <MatchTitle sizeTitle= "2rem">Quem sou eu?</MatchTitle>

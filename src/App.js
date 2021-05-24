@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/home"><Home /></Route>
+          <Route path="/" exact><Home /></Route>
           <Route path="/match"><Match /></Route>
           <Route path="/resume"><Resume /></Route>
         </Switch>

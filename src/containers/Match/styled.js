@@ -5,9 +5,6 @@ export const MatchContainer = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
   width: 100%;
-  height: 100%;
-  background-color: white;
+  background-color: #863876;
 `
