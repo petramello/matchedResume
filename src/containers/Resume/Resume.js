@@ -34,12 +34,11 @@ const Resume = () => {
 
         <PhoneContainer>
           <MatchContainer />
-          <Phone isMatched={true} />
+          <Phone isMatched={true} resumeChildren="Currículo completo" isAtResume={true}/>
           <GoBack   linkTo="/" arrowBottom= "0rem" arrowMargLeft="1rem" arrowFontSize="2rem"/>
         </PhoneContainer>
 
         <ResumeDiv>
-
           <ResumeTextDiv>
             <MatchTitle sizeTitle= "2rem">Quem sou eu?</MatchTitle>
             <ResumeContent />
@@ -90,7 +89,6 @@ const Resume = () => {
               linkhref="https://churrascaria.petramello.repl.co/"
               cardTitle="Site de Rodízio"
             />
-
           </PortfolioDiv>
         </ResumeDiv>
       </ResumeContainer>

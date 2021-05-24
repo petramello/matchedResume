@@ -12,7 +12,7 @@ import {ReadMoreContainer, ReadMoreText, ReadOrRide} from "./styled";
 
     return (
       <ReadMoreText>
-        {isReadMore ? text.slice(0, 1000) : text}
+        {isReadMore ? text.slice(0, 900) : text}
         <ReadOrRide onClick={toggleReadMore} >
           {isReadMore ? "...read more" : " show less"}
         </ReadOrRide>

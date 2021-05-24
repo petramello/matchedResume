@@ -23,7 +23,7 @@ export const MatchSubTitle = styled.p`
   letter-spacing: 0.1rem;
 `
 
-export const CVLink = styled(NavLink)`
+export const CVLink = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -46,3 +46,33 @@ export const CVLink = styled(NavLink)`
     border: none;
   }
 `
+
+export const CVNavLink = styled(NavLink)`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin-top: 40px;
+  padding: 1.3rem;
+  color: #e661b2;
+  border-radius: 8%;
+  border: solid #e661b2 2px;
+  font-size: 1.2rem;
+  font-family: Gudea, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: bolder;
+    background-color: #541AA4;
+    color: white;
+    border: none;
+  }
+`
+
+export const DownloadLink = styled.a`
+  margin-left: 30px;
+  font-size: 1.5rem;
+  color: #e661b2;
+  `

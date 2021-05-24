@@ -29,7 +29,7 @@ export const ResumeDiv = styled.div`
   width: 60%;
   text-align: justify;
   color: white;
-  margin-top: 50px;
+  margin-top: 100px;
 `
 
 export const ResumeTextDiv = styled.div`
@@ -42,8 +42,8 @@ export const IconDiv = styled.div`
   position: relative;
   display: inline-flex;
   text-align: right;
-  width: 100%;
-  margin-top: 50px;
+  height: 50px;
+  z-index: 999;
 `
 
 export const PortfolioDiv = styled.div`
@@ -54,7 +54,7 @@ export const PortfolioDiv = styled.div`
   text-align: center;
   height: 100%;
   width: 90%;
-  margin-top: -150px;
+  margin-top: -200px;
 `
 
 

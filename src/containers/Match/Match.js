@@ -10,7 +10,7 @@ const Match = () => {
 
   return (
     <MainContainer>
-      <Phone isMatched={false} />
+      <Phone isMatched={false} resumeChildren="Clique para conhecê-la!" isAtResume={false}/>
       <MatchContainer>
         <GoBack linkTo="/" />
       </MatchContainer>

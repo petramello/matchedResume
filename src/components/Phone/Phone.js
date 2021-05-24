@@ -8,7 +8,10 @@ import { MatchDiv } from "./styled";
 
 const Phone = (props) => {
 
-  const [isMatched, setIsMatched] = useState(props.isMatched)
+  const [isMatched, setIsMatched] = useState(
+    props.isMatched,
+    props.resumeChildren
+  )
 
   const onHandleClick = () => {
     if (props.isMatched === false) {
@@ -21,7 +24,7 @@ const Phone = (props) => {
   <>
     <MatchDiv>
       { isMatched ?
-        <ItsMatched />
+        <ItsMatched isAtResume={props.isAtResume} >{props.resumeChildren}</ItsMatched>
         :
         <ItsLooking handleClick={() => onHandleClick(props.isMatched)} />
       }
