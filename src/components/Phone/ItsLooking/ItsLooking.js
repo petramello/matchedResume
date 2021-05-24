@@ -11,6 +11,8 @@ import {FcCollaboration} from "react-icons/fc";
 import {FcBullish} from "react-icons/fc";
 import {FcApproval} from "react-icons/fc";
 import {BiError} from "react-icons/bi";
+import {BiHappyHeartEyes} from "react-icons/bi"
+import {RiEmotionSadLine} from "react-icons/ri"
 
 import {
   IsLookingTitleDiv,
@@ -52,7 +54,7 @@ const ItsLooking = (props) => {
       </TinderProfile>
 
       <ChoiceContainer>
-        <Options></Options>
+        <Options><RiEmotionSadLine /></Options>
 
         {isDenid ?
           <Choice color="#C7C7C7">
@@ -67,7 +69,7 @@ const ItsLooking = (props) => {
         <Choice onClick={props.handleClick}>
           <FaHeart />
         </Choice>
-        <Options></Options>
+        <Options><BiHappyHeartEyes /></Options>
       </ChoiceContainer>
 
       {isDenid ?

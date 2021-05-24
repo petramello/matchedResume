@@ -57,12 +57,21 @@ export const Choice = styled.div`
   
   &:hover {
     background-color: #541AA4;
+    cursor: pointer;
   }
 `
 export const Options = styled(Choice)`
+  background-color: white;
+  color: #e661b2;
+  font-size: 2rem;
   width: 30rem;
   height: 4rem;
   margin: 0;
+
+  &:hover {
+    background-color: white;
+    cursor: default ;
+  }
 `
 export const DenySpan = styled.div`
   margin-top: 10px;

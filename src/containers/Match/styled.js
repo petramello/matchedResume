@@ -18,5 +18,5 @@ export const MatchContainer = styled.div`
   width: 90%;
   height: 100vh;
   background-color: #dd5c76;
-  clip-path: polygon(0 0, 100% 100%, 0 100%,85% 0);
+  clip-path: polygon(0 0, 100% 100%, 0 100%,100% 0);
 `
