@@ -6,15 +6,18 @@ export const ResumeContainer = styled.div`
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: white;
 `
 
 export const PhoneContainer = styled.div`
   width: 40%;
   height: 100%;
-  object-fit: contain;
-  margin-top: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+ 
 `
 
 export const ResumeDiv = styled.div`

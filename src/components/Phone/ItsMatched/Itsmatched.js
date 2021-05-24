@@ -26,6 +26,7 @@ const Itsmatched = () => {
       </AvatarContainer>
 
       <CVLink to="/resume">Resume</CVLink>
+
     </>
   )
 }

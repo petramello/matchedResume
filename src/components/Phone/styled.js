@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 
-
 export const MatchDiv = styled.div`
-  font-family: Lobster, sans-serif;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
-  color: #e661b2;
-  width: 400px;
+  position: fixed;
+  width: 350px;
   height: 700px;
-  border-radius: 5%;
-  opacity: 95%;
   display: inline-table;
-  border: 1px solid #7c7c7c;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Lobster, sans-serif;
+  color: #e661b2;
   background-color: #3C393A;
+  border: 1px solid #7c7c7c;
+  border-radius: 5%;
+  z-index: 999;
 `
 
 

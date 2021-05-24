@@ -27,6 +27,7 @@ const Resume = () => {
         <PhoneContainer>
           <Phone isMatched={true} />
         </PhoneContainer>
+
         <ResumeDiv>
           <MatchTitle sizeTitle= "2rem">Quem sou eu?</MatchTitle>
           <p>Em transição de carreira, na minha área profissional anterior - ciências biológicas, atuei desenvolvendo

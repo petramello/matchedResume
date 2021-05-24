@@ -1,10 +1,10 @@
 import React from 'react';
 
-import {HomeContainer,
+import {Container,
   OpportunityContainer,
   OpportunityImg,
   SearchContainer,
-  MidleText,
+  TitleHome,
   SquareLink} from "./styled";
 
 import opportunity from '../../assets/possibleOportunity.png'
@@ -12,15 +12,15 @@ import opportunity from '../../assets/possibleOportunity.png'
 const Home = () => {
 
   return (
-    <HomeContainer>
+    <Container>
       <OpportunityContainer>
         <OpportunityImg src={opportunity} />
       </OpportunityContainer>
       <SearchContainer>
-        <MidleText>Encontre Seu Match Profissional </MidleText>
+        <TitleHome>Encontre Seu Match Profissional</TitleHome>
         <SquareLink to="/match">Encontrar</SquareLink>
       </SearchContainer>
-    </HomeContainer>
+    </Container>
   )
 }
 

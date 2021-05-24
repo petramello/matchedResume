@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const AvatarContainer= styled.div`
-  width: 430px;
+  margin: 25px 0;
+  width: 100%;
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 `
 
 export const AvatarImg= styled.img`
-  width: 170px;
-  height: 170px;
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
   text-align: center;
   margin: 10px;
   border-radius: 50%;

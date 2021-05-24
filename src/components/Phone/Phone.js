@@ -1,29 +1,42 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import Itsmatched from "./ItsMatched/Itsmatched";
 import ItsLooking from "./ItsLooking/ItsLooking";
-
+import Itsmatched from "./ItsMatched/Itsmatched";
 
 import { MatchDiv } from "./styled";
+import GoBack from "../GoBack/GoBack";
+import {MatchContainer} from "../../containers/Match/styled";
 
 
 const Phone = (props) => {
 
-  const onChangeMatched = (isMatched) => {
-    console.log("ism", isMatched);
-    props.isMatched = isMatched;
+  const [isMatched, setIsMatched] = useState(false)
+
+  const onHandleClick = () => {
+    if (isMatched === false) {
+      setIsMatched(true)
+    }
   }
 
   return (
-      <MatchDiv>
-        { props.isMatched ?
-          <Itsmatched />
-          :
-          <ItsLooking
-            isMatched={props.isMatched}
-            setMatched={isMatched => onChangeMatched(isMatched) } />
-        }
-      </MatchDiv>
+
+  <>
+    <MatchDiv>
+      { isMatched ?
+        <Itsmatched />
+        :
+        <ItsLooking handleClick={() => onHandleClick(isMatched)} />
+      }
+    </MatchDiv>
+
+    {/*<MatchContainer>*/}
+    {/*  { isMatched ?*/}
+    {/*    <GoBack linkTo="/match" />*/}
+    {/*    :*/}
+    {/*    <GoBack linkTo="/" />*/}
+    {/*  }*/}
+    {/*</MatchContainer>*/}
+  </>
   )
 }
 

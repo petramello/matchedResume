@@ -17,7 +17,7 @@ export const MatchTitle = styled.p`
   letter-spacing: 0;
 `
 
-export const MatchSubTitle = styled(MatchTitle)`
+export const MatchSubTitle = styled.p`
   font-family: Gueda, sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
@@ -28,7 +28,7 @@ export const CVLink = styled(NavLink)`
   align-items: center;
   justify-content: center;
   width: 300px;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 1.3rem;
   color: #e661b2;
   border-radius: 8%;
