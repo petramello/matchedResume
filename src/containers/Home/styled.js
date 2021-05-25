@@ -7,11 +7,17 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: white;
   background: rgb(230,97,178);
   background: linear-gradient(90deg, rgba(230,97,178,1) 4%, rgba(134,56,118,1) 36%, rgba(73,30,80,1) 77%, rgba(2,0,36,1) 98%);
+
+   @media (max-width: 480px), handheld and (orientation: landscape) {
+     display: inline-flex;
+   }
 `
+
+
 
 export const OpportunityContainer = styled.div`
   align-items: center;
@@ -23,6 +29,7 @@ export const OpportunityContainer = styled.div`
   backdrop-filter: blur(8px);
   background-color: #863876;
   clip-path: polygon(85% 0, 100% 100%, 0 100%, 0 0);
+  
 `
 
 export const OpportunityImg = styled.img`
@@ -31,6 +38,14 @@ export const OpportunityImg = styled.img`
   align-items: center;
   padding: 0;
   float: left;
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    margin: 10px;
+  }
+
+  @media (min-width: 1824px) {
+    margin: 1rem;
+  }
 `
 
 export const SearchContainer= styled.div`
@@ -41,6 +56,12 @@ export const SearchContainer= styled.div`
   width: 50%;
   height: 100%;
   font-family: Gudea, sans-serif;
+
+  @media (min-width: 1824px) {
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: auto;
+  }
 `
 
 export const TitleHome= styled.p`
@@ -50,6 +71,18 @@ export const TitleHome= styled.p`
   padding-bottom: 70px;
   margin: 50px;
   letter-spacing: 0.2rem;
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+    margin: 10px;
+  }
+
+  @media (min-width: 1824px) {
+    font-size: 4.5rem;
+  }
+
+
 `
 
 export const SquareLink= styled(NavLink)`
@@ -70,5 +103,25 @@ export const SquareLink= styled(NavLink)`
   &:hover {
     font-size: 1.3rem;
     background-color: #541AA4;
+  }
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+    letter-spacing: 0.1rem;
+    
+    &:hover {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (min-width: 1824px) {
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+
+    &:hover {
+      font-size: 1.7rem;
+    }
   }
 `
