@@ -16,12 +16,12 @@ export const MatchDiv = styled.div`
   z-index: 999;
 
   @media (max-width: 370px), handheld and (orientation: landscape) {
-    width: fit-content;
+    width: 100%;
     height: 620px;
   }
 
   @media (max-width: 480px), handheld and (orientation: landscape) {
-    width: fit-content;
+    width: 100%;
     height: 620px;
   }
 `

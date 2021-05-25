@@ -9,18 +9,31 @@ export const TitleDiv = styled.div`
   text-align: center;
   justify-content: center;
   height: ${props => (props.heightTitleDiv || "10rem")};
+  
+  @media (max-width: 370px), handheld and (orientation: landscape) {
+    width: 90%;
+  }
 `
+
 export const MatchTitle = styled.p`
   font-family: Lobster, sans-serif;
   font-size: ${props => (props.sizeTitle || "4rem")};
   margin-bottom: 0;
   letter-spacing: 0;
+
+  @media (max-width: 370px), handheld and (orientation: landscape) {
+    font-size: 3rem;
+  }
 `
 
 export const MatchSubTitle = styled.p`
   font-family: Gueda, sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
+
+  @media (max-width: 370px), handheld and (orientation: landscape) {
+    font-size: 1rem;
+  }
 `
 
 export const CVLink = styled.a`
@@ -45,6 +58,11 @@ export const CVLink = styled.a`
     color: white;
     border: none;
   }
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    width: 280px;
+    font-size: 1rem;
+  }
 `
 
 export const CVNavLink = styled(NavLink)`
@@ -68,6 +86,11 @@ export const CVNavLink = styled(NavLink)`
     background-color: #541AA4;
     color: white;
     border: none;
+  }
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    width: 280px;
+    font-size: 1rem;
   }
 `
 

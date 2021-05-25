@@ -7,6 +7,11 @@ export const AvatarContainer= styled.div`
   position: relative;
   justify-content: space-around;
   text-align: center;
+
+  @media (max-width: 370px), handheld and (orientation: landscape) {
+    width: 90%;
+    justify-content: space-between;
+  }
 `
 
 export const AvatarImg= styled.img`
@@ -17,4 +22,9 @@ export const AvatarImg= styled.img`
   margin: 10px;
   border-radius: 50%;
   border: ${props => (props.border || "solid #e661b2 4px")};
+ 
+  @media (max-width: 370px), handheld and (orientation: landscape) {
+    width: 150px;
+    height: 150px;
+  }
 `

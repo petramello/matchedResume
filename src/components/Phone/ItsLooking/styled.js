@@ -12,7 +12,7 @@ export const IsLookingTitleDiv = styled.div`
   height: ${props => (props.heightTitleDiv || "7rem")};
 
   @media (max-width: 480px), handheld and (orientation: landscape) {
-    height: ${props => (props.heightTitleDiv || "5rem")};
+    height: ${props => (props.heightTitleDiv || "5.5rem")};
   }
 `
 
@@ -37,12 +37,6 @@ export const TinderProfile = styled.div`
   text-align: center;
   z-index: 1000;
   padding: 10px 0 5px 5px;
-
-  @media (max-width: 370px), handheld and (orientation: landscape) {
-    width: 90%;
-    height: 315px;
-    padding: 5px 0;
-  }
 
   @media (max-width: 480px), handheld and (orientation: landscape) {
     width: 100%;

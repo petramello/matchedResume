@@ -57,6 +57,10 @@ export const SearchContainer= styled.div`
   height: 100%;
   font-family: Gudea, sans-serif;
 
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    margin: 6rem 5rem 5rem 0 ;
+  }
+
   @media (min-width: 1824px) {
     text-align: center;
     margin-top: 15rem;
@@ -71,7 +75,8 @@ export const TitleHome= styled.p`
   padding-bottom: 70px;
   margin: 50px;
   letter-spacing: 0.2rem;
-
+  
+  
   @media (max-width: 480px), handheld and (orientation: landscape) {
     font-size: 1.2rem;
     padding-bottom: 15px;
