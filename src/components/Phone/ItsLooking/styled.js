@@ -14,10 +14,6 @@ export const IsLookingTitleDiv = styled.div`
   @media (max-width: 480px), handheld and (orientation: landscape) {
     height: ${props => (props.heightTitleDiv || "5rem")};
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 
 export const IsLookingSubtitle = styled.p`
@@ -29,10 +25,6 @@ export const IsLookingSubtitle = styled.p`
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 
 export const TinderProfile = styled.div`
@@ -56,10 +48,6 @@ export const TinderProfile = styled.div`
     width: 100%;
     height: 315px;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 
 export const TinderProfileText = styled(MatchSubTitle)`
@@ -73,10 +61,6 @@ export const TinderProfileText = styled(MatchSubTitle)`
   @media (max-width: 480px), handheld and (orientation: landscape) {
     font-size: 1.05rem;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 export const ChoiceContainer = styled.div`
   position: relative;
@@ -95,10 +79,6 @@ export const ChoiceContainer = styled.div`
     width: 310px;
     margin-top: 10px;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 export const Choice = styled.div`
   display: inline-flex;
@@ -130,10 +110,6 @@ export const Choice = styled.div`
     height: 6rem;
     font-size: 1.8rem;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 export const Options = styled(Choice)`
   background-color: white;
@@ -159,10 +135,6 @@ export const Options = styled(Choice)`
     width: 10rem;
     height: 2.8rem;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 export const DenySpan = styled.div`
   margin-top: 10px;
@@ -188,8 +160,5 @@ export const DenySpan = styled.div`
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
+  
   `

@@ -24,10 +24,6 @@ export const MatchDiv = styled.div`
     width: fit-content;
     height: 620px;
   }
-
-  //@media (min-width: 1824px) {
-  //  margin: 1rem;
-  //}
 `
 
 

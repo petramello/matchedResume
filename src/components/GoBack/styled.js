@@ -11,8 +11,25 @@ export const ArrowBackContainer = styled(NavLink)`
   color: ${props => (props.arrowColor || "#F2BBC7")};
   text-decoration: none;
   
-  &: hover {
+  &:hover {
     color: #541AA4;
+  }
+  
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    bottom: 1rem;
+    left: 5rem;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 980px), handheld and (orientation: landscape) { {
+    bottom: 0.5rem;
+    left: 4rem;
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1824px), handheld and (orientation: landscape) { {
+    bottom: 1.5rem;
+    left: 20rem;
   }
 `
 
