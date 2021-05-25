@@ -14,6 +14,20 @@ export const MatchDiv = styled.div`
   border: 1px solid #7c7c7c;
   border-radius: 5%;
   z-index: 999;
+
+  @media (max-width: 370px), handheld and (orientation: landscape) {
+    width: fit-content;
+    height: 620px;
+  }
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    width: fit-content;
+    height: 620px;
+  }
+
+  //@media (min-width: 1824px) {
+  //  margin: 1rem;
+  //}
 `
 
 

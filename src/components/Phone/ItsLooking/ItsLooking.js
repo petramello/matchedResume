@@ -55,7 +55,6 @@ const ItsLooking = (props) => {
 
       <ChoiceContainer>
         <Options><RiEmotionSadLine /></Options>
-
         {isDenid ?
           <Choice color="#C7C7C7">
             <ImCross onClick={onHandleDeny}/>
@@ -65,7 +64,6 @@ const ItsLooking = (props) => {
             <ImCross onClick={onHandleDeny}/>
           </Choice>
         }
-
         <Choice onClick={props.handleClick}>
           <FaHeart />
         </Choice>
