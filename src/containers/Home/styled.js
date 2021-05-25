@@ -7,13 +7,13 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: white;
   background: rgb(230,97,178);
   background: linear-gradient(90deg, rgba(230,97,178,1) 4%, rgba(134,56,118,1) 36%, rgba(73,30,80,1) 77%, rgba(2,0,36,1) 98%);
 
    @media (max-width: 480px), handheld and (orientation: landscape) {
-     display: inline-flex;
+     height: 100vh;
    }
 `
 

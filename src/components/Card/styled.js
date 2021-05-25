@@ -7,8 +7,18 @@ export const CardContainer = styled.a`
   align-items: center;
   align-content: center;
   text-decoration: none;
-  width: 100px;
+  width: 100%;
   height: 100px;
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    display: inline-block;
+    width: 100%;
+    margin: 20px;
+  }
+
+  @media (min-width: 1824px) {
+    width: 100%;
+  }
   `
 
 export const ImgCard = styled.img`
@@ -23,6 +33,10 @@ export const ImgCard = styled.img`
     opacity: 0.95;
   }
 
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    display: inline-block;
+  }
+
 `
 
 export const CardTitle = styled.p`
@@ -34,4 +48,9 @@ export const CardTitle = styled.p`
   justify-content: center;
   text-decoration: none;
   color: #e661b2;
+
+  @media (max-width: 480px), handheld and (orientation: landscape) {
+    display: inline-block;
+    width: 100%;
+  }
 `

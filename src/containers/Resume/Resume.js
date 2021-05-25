@@ -1,5 +1,4 @@
 import React from 'react';
-import { PDFViewer, Document, Page } from 'react-pdf';
 
 import Phone from "../../components/Phone/Phone";
 import Card from "../../components/Card/Card";
@@ -8,7 +7,6 @@ import droneDaMontanha from "../../assets/droneDaMontanha.png";
 import counterApp from "../../assets/counterApp.png";
 import infoCovid from "../../assets/infoCovid.png";
 import churrascaria from "../../assets/churrascaria.png";
-import cvPDF from '../../assets/cv_PetraMello.pdf';
 
 import IconSocialMedia from "../../components/NavigationItens/IconSocialMidia";
 
@@ -30,8 +28,6 @@ const Resume = () => {
 
   return (
       <ResumeContainer>
-
-
         <PhoneContainer>
           <MatchContainer />
           <Phone isMatched={true} resumeChildren="Currículo completo" isAtResume={true}/>

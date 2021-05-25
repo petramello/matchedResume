@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Container} from "../Home/styled";
+import {ArrowBackContainer} from "../../components/GoBack/styled";
 
 
 export  const MainContainer = styled(Container)`
@@ -12,7 +13,6 @@ export  const MainContainer = styled(Container)`
 
   @media (max-width: 480px), handheld and (orientation: landscape) {
     width: 100%;
-  }
 `
 
 export const MatchContainer = styled.div`
@@ -25,6 +25,12 @@ export const MatchContainer = styled.div`
   clip-path: polygon(0 0, 100% 100%, 0 100%,100% 0);
 
   @media (max-width: 480px), handheld and (orientation: landscape) {
-    width: 100%;
+    display: none;
   }
+
+  @media (min-width: 1824px), handheld and (orientation: landscape) { {
+    
+    ${ArrowBackContainer} {
+      margin-left: 30px ;
+    }
 `

@@ -8,7 +8,7 @@ export const ReadMoreContainer = styled.div`
   text-align: justify;
   color: white ;
   font-family: Gudea, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   z-index: 999;
   `
 
