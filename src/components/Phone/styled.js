@@ -18,11 +18,13 @@ export const MatchDiv = styled.div`
   @media (max-width: 370px), handheld and (orientation: landscape) {
     width: 100%;
     height: 620px;
+    
   }
 
   @media (max-width: 480px), handheld and (orientation: landscape) {
     width: 100%;
     height: 620px;
+    margin-top: 0;
   }
 `
 

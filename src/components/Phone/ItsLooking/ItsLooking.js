@@ -43,8 +43,8 @@ const ItsLooking = (props) => {
       </IsLookingTitleDiv>
 
       <TinderProfile>
-        <TinderProfileText><FcMindMap /> Proativa </TinderProfileText>
-        <TinderProfileText><FcConferenceCall /> Colaborativa</TinderProfileText>
+        <TinderProfileText><strong>Profissional: </strong></TinderProfileText>
+        <TinderProfileText><FcMindMap /> <FcConferenceCall /> Proativa e Colaborativa</TinderProfileText>
         <TinderProfileText><FcCollaboration /> Boa comunicação oral e escrita</TinderProfileText>
         <TinderProfileText><FcDataSheet /> Raciocínio lógico</TinderProfileText>
         <TinderProfileText><FcIdea /> Boa em resolução de problemas</TinderProfileText>

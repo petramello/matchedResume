@@ -31,6 +31,6 @@ export const MatchContainer = styled.div`
   @media (min-width: 1824px), handheld and (orientation: landscape) { {
     
     ${ArrowBackContainer} {
-      margin-left: 30px ;
+      margin-left: 25px ;
     }
 `

@@ -56,7 +56,7 @@ export const PhoneContainer = styled.div`
     height: 30%;
 
       ${ArrowBackContainer} {
-          margin: 100px 0 -5rem 10px;
+          margin: 100px 0 0 10px;
       }
   }
 

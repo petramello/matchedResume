@@ -58,7 +58,7 @@ const Resume = () => {
               imgCard={droneDaMontanha}
               altText="Link que redireciona para o site www.dronedamontanha.com"
               cardContentBack="#0a47ed"
-              linkhref="www.dronedamontanha.com"
+              linkhref="https://dronedamontanha.com/"
               cardTitle="Site: Drone da Montanha"
             />
 
