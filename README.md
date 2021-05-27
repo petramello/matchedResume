@@ -5,17 +5,25 @@
 
 📑 **About**
 
-The website is a alternative to show my resume and some projects and portfolio, with the intent to increase my professional exposure and reach more oportunities. This project was bootstrapped with Create React App.
+The website is a employee finder, or an alternative to show resume and portfolio, with the intent to increase the professional exposure and reach more oportunities. This project was bootstrapped with Create React App.
 <br>
 <br>
 
 🛠️ **Technologies**
 
-HTML5 JSX JS CSS3 React Styled-components Responsive Design **(🔧 under fixing)**
+HTML5
+JSX
+JS
+CSS3
+React
+Styled-components
+Responsive Design **(🔧 under fixing)**
 <br>
 <br>
 
+
 💻 **Execution and Run**
+
 
 Run the following command on your terminal to clone this repository:
 
@@ -34,5 +42,15 @@ Open http://localhost:3000 to view it in the browser.
 <br>
 
 
+🔗 **Deploy**
+
+Deploy/Hosting by Firebase.
+
+You can find this website on [SITE](https://likeapossiblegirl-jobmatch.web.app/)
+<br>
+<br>
+
+
 📝 **Authors:**
+
 Created and developed by Petra Mello. ❤️
