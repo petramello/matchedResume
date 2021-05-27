@@ -1,5 +1,5 @@
-<h1>matchResume: Find your best employee choice, in this case, I prensent me to you. Plesure too meet you! :)</h1>
-<h1> 🔧...under development, as some web design responsive is been fixing)</h1>
+<h1>matchResume: Website to find your best employee choice, in this case, I prensent me to you. Plesure too meet you! :)</h1>
+<h2> 🔧...under development, as some web design responsive is been fixing)</h2>
 
 <br>
 
