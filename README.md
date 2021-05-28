@@ -1,5 +1,5 @@
-<h1>matchResume: Website to find your best employee choice, in this case, I prensent me to you. Plesure too meet you! :)</h1>
-<h2> 🔧...under development, as some web design responsive is been fixing)</h2>
+<h1>matchResume: Site to find employees. In this case, I take the opportunity to leave my portfolio.! :)</h1>
+<h2> 🔧...under development: fixing responsive web design)</h2>
 
 <br>
 
