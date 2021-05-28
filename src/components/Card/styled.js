@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.a`
-  display: inline-block;
-  position: relative;
-  justify-content: space-around;
+  display: inline;
   align-items: center;
   align-content: center;
   text-decoration: none;
-  width: 100%;
+  width: 100px;
   height: 100px;
-
+  margin: 15px;
+  transition: opacity .8ms ease-in;
+  
   @media (max-width: 480px), handheld and (orientation: landscape) {
     display: inline-block;
     width: 100%;
@@ -25,13 +25,16 @@ export const ImgCard = styled.img`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  transition: opacity .8ms ease-in;
+  padding: 5px;
 
   &:hover {
-    border: #541AA4 solid 10px;
+    padding: 0;
+    border: #541AA4 solid 5px;
+    border-radius: 50%;
     cursor: pointer;
     opacity: 0.95;
   }
+ 
 
   @media (max-width: 480px), handheld and (orientation: landscape) {
     display: inline-block;
